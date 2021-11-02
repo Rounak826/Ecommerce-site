@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/c2868f912a.js" crossorigin="anonymous"></script>
+<title>E-commerce | About us</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+    
+    <body>
+        
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="index.html"><img src="1Stop%2001.png" width="150"></a> 
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About us</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Register.html">Register</a>
+                
+            </div>
+        </nav>
+        
+        <div class="about_us">
+            <h2>About Us</h2>
+            <div class="about_content">
+                <p>empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            </div>
+            <hr>
+            <h2>our mission</h2>
+            <p>empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eaempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            
+        </div>
+        
+        
+        
+        
+        
+         <div class="feed">
+            <h2>Write a review</h2>
+            <div class="feed_form" method="post">
+                <form name="review_sheet">
+                    <input type="text" name="NAME" placeholder="name"><br>
+                    <input type="email" name="EMAIL" placeholder="Email Id"><br>
+                    <input type="number" name="NUMBER" placeholder="contact number"><br>
+                    <textarea row='5' cols='7' name="REVIEW" placeholder="write your review"></textarea><br>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </div>
+        
+        </div>
+        
+        
+          <footer>
+            <div class="footer_logo">
+                <img src="1Stop%2001.png">
+            </div>
+            <div class="pages">
+                <h3>pages</h3>
+                <a href="about.html">About us</a>|
+                <a href="service.html">Services</a>|
+                <a href="contact.html">Reach us</a>|
+                <a href="">Blogs</a>|
+                <a href="">Login</a>|
+                <a href="">Sign up</a>|
+                
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>|
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>|
+                <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>|
+                <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>|
+                <a href=""><i class="fab fa-twitter fa-2x"></i></a>|
+                
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>|
+                <a href=""><i class="fas fa-phone-alt fa-2x"></i></a>|
+                <a href=""><i class="far fa-envelope fa-2x"></i></a>|
+            </div>
+            <hr>
+            <p>Copyright &copy; 2021 1stop.ai All Rights Reserved</p>
+        </footer>
+        
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       
+        <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxVMXHAXiWckbBRzfDONdXxvVf1pJax1yuNJwOXj_y_ZGt55U6ZK4sDxX5rp7b7ouGEXg/exec'
+            const form = document.forms['review_sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks you, will get bzck to you soon.."))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>    
+</html>
